@@ -1,24 +1,10 @@
-# README
+HTTPie is a command-line HTTP client.
+HTTPie gem for json request:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+$ http :3000/v1/contacts  #for index
 
-Things you may want to cover:
+$ http POST :3000/v1/contacts \first_name="Harry" \last_name="Potter" \email="harry@yahoo.com"  #for create
 
-* Ruby version
+$ http PATCH :3000/v1/contacts/5 \first_name="LetaPP"  #for update
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+$ http DELETE :3000/v1/contacts/  #for delete
